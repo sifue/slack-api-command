@@ -37,7 +37,7 @@ node dist/index.js post chat.postMessage --channel CLFH073PU --text "Hello!"
 
 # Auto cursor mode
 
-Auto cursor help to get all of responses in Slack with cursor.
+"Auto cursor mode" helps to get all of responses in Slack with cursor.
 
 ```
 export SLACK_COMMAND_AC_SLEEP=500
