@@ -1,7 +1,7 @@
 {
   "name": "slack-api-command",
   "version": "1.0.0",
-  "description": "This is a simple tool to get access to Slack API with shell command.",
+  "description": "A simple tool to get access to Slack API with shell command.",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js",
