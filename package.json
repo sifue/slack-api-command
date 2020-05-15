@@ -12,8 +12,8 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "author": "sifue (Soichiro Yoshimura)",
-  "license": "ISC",
+  "author": "Soichiro Yoshimura (sifue)",
+  "license": "MIT",
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/bluebird": "^3.5.31",
