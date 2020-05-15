@@ -1,7 +1,7 @@
 # Slack API command tool
 
-This is a simple tool to get access to [Slack API](https://api.slack.com/methods/) with shell command.
-This tool use only URL query parameter. This tool can't post big data.
+This is a simple tool to get access to [Slack API](https://api.slack.com/methods/) with shell command.  
+This tool use only URL query parameter. This tool can't post big data.  
 Only standard output is used.
 
 # How to use (with bash)
@@ -26,11 +26,8 @@ node dist/index.js get users.list --limit 10
 ### Get users with cursor
 
 ```
-export SLACK_COMMAND_AC_SLEEP=500
 node dist/index.js get users.list --cursor dXNlcjpVMDYxTkZUVDI= --limit 10
 ```
-
-SLACK_COMMAND_AC_SLEEP is sleep time msec interval for continuous accesses.
 
 ### Post message
 
@@ -43,9 +40,11 @@ node dist/index.js post chat.postMessage --channel CLFH073PU --text "Hello!"
 Auto cursor help to get all of responses in Slack with cursor.
 
 ```
+export SLACK_COMMAND_AC_SLEEP=500
 node dist/index.js get users.list autocursor --limit 100
 ```
 
+SLACK_COMMAND_AC_SLEEP is sleep time msec interval for continuous accesses.  
 Output is Array JSON of response.data.
 
 # Use with [jq](https://stedolan.github.io/jq/) command
