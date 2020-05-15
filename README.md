@@ -6,10 +6,13 @@ Only standard output is used.
 
 # How to use (with bash)
 
+Please install Node.js (Upper v12.0.0)
+
 ```
-export SLACK_TOKEN=xoxb-9999999999999-9999999999999-xxxxxxxxxxxxxxxxxxxxxx
+npm install
 npm run build
-node dist/index.js httpmethod apiname --args1 hogehoge --args2 fugafuga
+export SLACK_TOKEN=xoxb-9999999999999-9999999999999-xxxxxxxxxxxxxxxxxxxxxx
+node dist/index.js {httpmethod} {apiname} --args1 hogehoge --args2 fugafuga
 ```
 
 # Example
