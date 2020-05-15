@@ -1,6 +1,6 @@
 # Slack API command tool
 
-This is a simple tool to get access to [Slack API](https://api.slack.com/methods/) with shell command.  
+This is a simple tool to get access to [Slack API](https://api.slack.com/methods) with shell command.  
 This tool only uses the URL query parameters. As a result, this tool is not able to post big data. All the results are then output to the standard output as JSON and can be processed with the jq command and so on. In addition, you can also process the API cursors to create an array JSON that combines all the resulting JSONs together.
 
 # How to use (with bash)
