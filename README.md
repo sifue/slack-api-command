@@ -60,6 +60,14 @@ node dist/index.js get users.list --limit 10 | jq .
 node dist/index.js get users.list --limit 10 | jq '.members[].id'
 ```
 
+### channel name and num members. 
+
+```
+node dist/index.js get channels.list > channels.json
+cat channels.json | jq '.channels[] | [.name, .num_members] | @csv' > channels.csv
+cat channels.csv | grep programming
+```
+
 # LICENSE
 
 MIT
