@@ -60,11 +60,11 @@ node dist/index.js get users.list --limit 10 | jq .
 node dist/index.js get users.list --limit 10 | jq '.members[].id'
 ```
 
-### channel name and num members. 
+### channel name and num members.
 
 ```
-node dist/index.js get channels.list > channels.json
-cat channels.json | jq '.channels[] | [.name, .num_members] | @csv' > channels.csv
+node dist/index.js get conversations.list autocursor --limit 1000 --exclude_archived true --types public_channel > channels.json
+cat channels.json | jq '.[] | .channels[] | [.name, .num_members] | @csv' > channels.csv
 cat channels.csv | grep programming
 ```
 
