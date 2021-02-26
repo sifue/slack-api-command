@@ -10,8 +10,10 @@ Please install Node.js (Upper v12.0.0)
 ```
 npm install
 npm run build
+chmod +x dist/index.js
+npm link
 export SLACK_TOKEN=xoxb-9999999999999-9999999999999-xxxxxxxxxxxxxxxxxxxxxx
-node dist/index.js {httpmethod} {apiname} --args1 hogehoge --args2 fugafuga
+slack-api-command {httpmethod} {apiname} --args1 hogehoge --args2 fugafuga
 ```
 
 # Example

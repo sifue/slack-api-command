@@ -12,6 +12,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "bin": {
+    "slack-api-command": "./dist/index.js"
+  },
   "author": "Soichiro Yoshimura (sifue)",
   "license": "MIT",
   "devDependencies": {

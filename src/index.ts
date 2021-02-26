@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 // Slack API methdos https://api.slack.com/methods
 
 import axios from 'axios';
