@@ -49,7 +49,7 @@ const axiosInstance = axios.create({
       const sleep = (msec: number) =>
         new Promise((resolve) => setTimeout(resolve, msec));
       if (process.env.SLACK_COMMAND_AC_SLEEP) {
-        await sleep(1000);
+        await sleep(parseInt(process.env.SLACK_COMMAND_AC_SLEEP));
       }
 
       const currentRes = await (axiosInstance as any)[method](
